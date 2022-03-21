@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+
+  <display-name>FlashMove</display-name>
+  
+  <filter>
+    <filter-name>OrderFilter</filter-name>
+    <filter-class>filters.OrderFilter</filter-class>
+  </filter>
+  <filter>
+    <filter-name>HitCounterFilter</filter-name>
+    <filter-class>filters.HitCounterFilter</filter-class>
+  </filter>
+  <listener>
+    <listener-class>listeners.ContextListener</listener-class>
+  </listener>
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>LoginServlet</display-name>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+   <display-name>LogoutServlet</display-name>
+   <servlet-name>LogoutServlet</servlet-name>
+   <servlet-class>servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>TransportationServlet</display-name>
+    <servlet-name>TransportationServlet</servlet-name>
+    <servlet-class>servlets.TransportationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>DriverServlet</display-name>
+    <servlet-name>DriverServlet</servlet-name>
+    <servlet-class>servlets.DriverServlet</servlet-class>
+  </servlet>
+    <servlet>
+    <display-name>RecordsServlet</display-name>
+    <servlet-name>RecordsServlet</servlet-name>
+    <servlet-class>servlets.RecordsServlet</servlet-class>
+  </servlet>
+  
+
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>LogoutServlet</servlet-name>
+   <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TransportationServlet</servlet-name>
+  	<url-pattern>/transportation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DriverServlet</servlet-name>
+  	<url-pattern>/driver</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>RecordsServlet</servlet-name>
+  	<url-pattern>/record</url-pattern>
+  </servlet-mapping>
+ 
+ 
+  <error-page>
+    <exception-type>javax.servlet.UnavailableException</exception-type>
+    <location>/errorpage.html</location>
+  </error-page>
+  <jsp-config/>
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

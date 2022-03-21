@@ -1,0 +1,126 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+
+#content {
+	width: 100%;
+	background-color: white;
+	border-radius: 15px;
+	display: inline-block;
+}
+
+.button {
+	width: 10%;
+	background-color: #2e2ee6;
+	border: 2px solid;
+	border-color: white;
+	color: white;
+	padding: 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 13px;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+.input {
+	outline-style: none;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	padding: 8px 8px;
+	width: 60%;
+	height: 10%;
+	font-size: 13px;
+	margin-top: 3%;
+}
+
+.input:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6)
+}
+
+.submit {
+	outline-style: none;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	padding: 8px 8px;
+	width: 65%;
+	height: 10%;
+	font-size: 15px;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+.submit:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6)
+}
+
+#header {
+	width: 100%;
+	background-color: #66afe9;
+}
+
+#selected_type {
+	padding-top: 30px;
+	text-align: center;
+}
+
+#selected_type img {
+	height: 100px;
+	width: 260px;
+}
+
+#option_type {
+	margin-top: 20px;
+	margin-left: 100px;
+	padding-bottom: 20px;
+}
+
+#option_type ul {
+	text-align: center;
+}
+	
+#option_type ul li {
+	display: inline;
+	margin-right: 100px;
+}
+
+#option_type ul li:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6)
+}
+
+#option_type ul li img {
+	height: 40px;
+	width: 90px;
+}
+
+#selected_type p {
+	color: white;
+	font-size: 20px;
+	margin-top: 10px;
+}

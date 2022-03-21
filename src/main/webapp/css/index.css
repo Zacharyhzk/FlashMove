@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+html,body {
+	background-image:url(../images/index_bg.png);
+	background-size:100% 95%;
+	background-position: center top;
+	overflow: auto;
+}
+
+.button {
+	width:10%;
+    background-color: #2e2ee6;
+    border:2px solid;
+    border-color: white;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:5px;
+    display: inline-block;
+    font-size: 13px;
+    margin-right:15px;
+    margin-top:10px;
+}
